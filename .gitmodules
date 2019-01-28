@@ -1,0 +1,9 @@
+[submodule "src/sass/base"]
+	path = src/sass/base
+	url = https://gitlab.com/omasakun/lib-v2-sass-base.git
+[submodule "src/ts/lib-browser"]
+	path = src/ts/lib-browser
+	url = https://gitlab.com/omasakun/lib-v2-ts-browser.git
+[submodule "src/ts/lib-common"]
+	path = src/ts/lib-common
+	url = https://gitlab.com/omasakun/lib-v2-ts-common.git
