@@ -1,0 +1,42 @@
+{
+  "name": "oyasai-todo",
+  "version": "1.0.0",
+  "description": "Todo List with Timer",
+  "private": true,
+  "scripts": {
+    "dev": "gulp",
+    "typedoc": "typedoc --out ./typedocs/ ./src/",
+    "tsc": "tsc -p ./",
+    "depgraph":"dependency-cruise --do-not-follow \"^node_modules\" --exclude \"^src/ts/lib-.*\" --output-type dot src/ts | dot -T svg > dependency-graph.svg",
+    "depgraph-pre-compilation":"dependency-cruise --do-not-follow \"^node_modules\" --exclude \"^src/ts/lib-.*\" --output-type dot --ts-pre-compilation-deps src/ts | dot -T svg > dependency-graph-pre-compilation.svg"
+  },
+  "author": "omasakun",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/dat.gui": "^0.7.2",
+    "@types/jsoneditor": "^5.19.0",
+    "browser-sync": "^2.26.3",
+    "dependency-cruiser": "^4.11.0",
+    "google-closure-compiler": "^20181028.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.1",
+    "jstransformer-markdown-it": "^2.1.0",
+    "rollup-plugin-commonjs": "8.4.1",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-stream": "^1.24.1",
+    "run-sequence": "^2.2.1",
+    "typedoc": "^0.13.0",
+    "typescript": "^3.2.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

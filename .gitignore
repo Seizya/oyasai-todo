@@ -1,0 +1,8 @@
+/node_modules/
+/.sass-cache/
+
+# Auto generated files
+/out/
+/typedocs/
+dependency-graph.svg
+dependency-graph-pre-compilation.svg
