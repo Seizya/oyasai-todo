@@ -45,6 +45,8 @@
     padding: 0.2em 0.5em
     border: 1px solid $c-border
     border-radius: 4px
+  #progress_text
+    font-family: monospace
 #new
   margin: auto 0 auto 1em
   button
@@ -71,9 +73,13 @@
     .todo_remove
       overflow: hidden
     .todo_etime, .todo_ptime
-      width: 3.5em
+      width: 6em
+      font-family: monospace
     .todo_etime
       cursor: pointer
+    &.running
+      .todo_etime
+        background-color: $cc-green
   li:not(:hover)
     .todo_remove
       width: 0
