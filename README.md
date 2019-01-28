@@ -2,7 +2,7 @@
 Todo List with Timer
 
 ## Demo
-[TODO: URLの追加]
+https://omasakun.github.io/oyasai-todo/
 
 ## ファイル構成について
 ### エディター・タスクランナー・コンパイラーの設定ファイル
@@ -30,6 +30,7 @@ Todo List with Timer
 - `/License` : ライセンス
 - `/README.md` : このファイル
 - `/.gitignore` : Gitでの管理から除外するファイルのリスト
+- `/docs/**/*` : GitHub Pages のためのフォルダー
 
 ## ソースコードを書き換えたりして遊んでみたい
 次の手順を踏んでください。
