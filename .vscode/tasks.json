@@ -1,0 +1,40 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile TypeScript",
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"option": "watch",
+			"problemMatcher": [
+				"$tsc-watch"
+			]
+		},
+		{
+			"label": "Compile Sass/Pug & Minify JS",
+			"type": "npm",
+			"script": "dev",
+			"problemMatcher": []
+		},
+		{
+			"label": "Generate TypeDocs",
+			"type": "npm",
+			"script": "typedoc",
+			"problemMatcher": []
+		},
+		{
+			"label": "Generate Dependency Graph",
+			"type": "npm",
+			"script": "depgraph",
+			"problemMatcher": []
+		},
+		{
+			"label": "Generate Dependency Graph (ts-pre-compilation-deps)",
+			"type": "npm",
+			"script": "depgraph-pre-compilation",
+			"problemMatcher": []
+		}
+	]
+}

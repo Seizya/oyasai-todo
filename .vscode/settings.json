@@ -1,0 +1,10 @@
+{
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.formatOnType": true,
+	"files.watcherExclude": {
+    "**/.git/*/**": true,
+    "**/node_modules/*/**": true
+	},
+	"html-css-class-completion.excludeGlobPattern": "**/node_modules/**"
+}
