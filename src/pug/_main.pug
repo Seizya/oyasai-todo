@@ -1,0 +1,39 @@
+#root.fullW.fullH
+	#title.center
+		h1 #{user.title}
+	#progress
+		#progress_bar
+			span#progress_text 12:23 / 23:35
+	#new
+		button#new_btn + New
+	#todo-title
+		h2.center Todo
+	#todo.scrollY
+		ul#todo_ul.listV
+			li.cH
+				button.todo_dot ・
+				button.todo_done ✔
+				button.todo_remove ✘
+				input(type="text" placeholder="Title" title="Title").grow.shrink.todi_title
+				input(type="text" readonly title="Elapsed time").todo_etime
+				input(type="text" title="Predetermined time").todo_ptime
+			li.cH
+				button.todo_dot ・
+				button.todo_done ✔
+				button.todo_remove ✘
+				input(type="text" placeholder="Title" title="Title").grow.shrink.todi_title
+				input(type="text" readonly title="Elapsed time").todo_etime
+				input(type="text" title="Predetermined time").todo_ptime
+	#done-title
+		h2.center Done
+	#done.scrollY
+		ul#todo_ul.listV
+			li.cH
+				button.todo_dot ・
+				button.todo_remove ✘
+				button.todo_done ✔
+				input(type="text" placeholder="Title" title="Title").grow.shrink.todi_title
+				input(type="text" readonly title="Elapsed time").todo_etime
+				input(type="text" title="Predetermined time").todo_ptime
+	#footer.center
+		include _footer.pug
